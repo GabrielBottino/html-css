@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor0: #B38808;
+    --cor1: #FFCB30;
+    --cor2: #FFC418;
+    --cor3: #0020B3;
+    --cor4: #1740FF;
+    --cor5: #30FFCC;
+
+    --fonte-padrao: "Arial", "Verdana", sans-serif;
+    --fonte-principal: 'Signika Negative', sans-serif;
+    --fonte-secudaria: 'Inter', sans-serif
+}
+
+body {
+    background-color: var(--cor1);
+    font: normal 1.5em var(--fonte-padrao);
+    margin: 0px;
+    padding: 10px;
+}
+
+main {
+    max-width: 800px;
+    min-width: 250px;
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.226);
+}
+
+main article{
+    text-align: justify;
+    font-family: var(--fonte-principal);
+}
+
+main img{
+    width: 50%;
+    margin: auto;
+    display: block;
+    min-width: 400px;
+}
+
+main div{
+    border: solid 1px;
+    margin: 25px 0px;
+    border-radius: 13px;
+    margin-right: 10px;
+    
+
+}
+
+main div.titulo{
+    padding: 10px;
+}
+
+main div.titulo h2{
+    text-align: right;
+    font-size: 2em;
+}
+
+main div.titulo p{
+    text-align: right;
+    font-size: 1em;
+}
+
+main div.titulo a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--cor2);
+    background-color: var(--cor4);
+    font-size: bolder;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: solid 1px black;
+    transition-duration: 0.3s;
+}
+
+main div.titulo a:hover{
+    background-color: var(--cor3);
+    color: var(--cor0);
+}
+
+main .secundaria, .Descrição{
+    font-family: var(--fonte-secudaria);
+}
+
+main .Descrição{
+    background-color: #FFC418;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px;
+    text-align: justify;
+}
+
+div h3{
+    margin: 0px;
+    background-color: var(--cor3);
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    color: var(--cor2);
+}
+
