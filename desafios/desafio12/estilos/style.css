@@ -15,41 +15,40 @@
 
 body{
     font: normal 1em var(--fonte-padrão);
+    min-height: 100vh;
 }
 
 header{
     background-color: black;
-    padding: 40px;
-    text-align: center;
     color: white;
-   
+    text-align: center;
+    font-variant: small-caps;
+    padding: 50px;
 }
 
 header h1{
     padding: 10px;
-    font: bold 5em var(--fonte-cabeçalho);
+    font: bold 10vw var(--fonte-cabeçalho);
 }
 
 
 main{
-    font: normal 2.5em var(--fonte-principal);
-    
-    
+    font: normal 3.5vw var(--fonte-principal);
 }
 
-section {
-    padding: 10px;
+main section {
+    padding: 5vh;
 }
 
 main section#flor{
-    background: url("../pacote-d012/imagens/background001.jpg") right center no-repeat fixed;
+    background: rgb(66, 66, 66) url("../pacote-d012/imagens/background001.jpg") right center no-repeat fixed;
     background-size: cover;
     color: white;
     box-shadow: inset 0px 7px 9px 0px rgba(0, 0, 0, 0.253);
 }
 
 main section#cartas{
-    background: url("../pacote-d012/imagens/background002.jpg") right center fixed;
+    background: rgb(66, 66, 66) url("../pacote-d012/imagens/background002.jpg") right center fixed;
     background-size: cover;
     color: white;
     box-shadow: inset 0px 7px 9px 0px rgba(0, 0, 0, 0.253);
@@ -62,10 +61,12 @@ main article{
 
 main article.fundo-imagem{
     background-color: rgba(0, 0, 0, 0.384);
+    display: inline-block;
+    padding: 10px;
 }
 
 main p{
-    line-height: 60px;
+    line-height: 10vh;
 }
 
 footer{
