@@ -7,26 +7,46 @@
     <title>Tabelas grandes</title>
     <style>
         table{
+            position: relative;
             border-collapse: collapse;
             width: 400px;
         }
         thead, tfoot{
             background-color: gray;
         }
+
+        tbody tr:nth-child(2n){
+            background-color: lightblue;
+        }
+
         th, td{
             border: 1px solid black;
             padding: 5px;
 
         }
+        caption{
+            font: bold 1.5em Arial, Helvetica, sans-serif;
+            padding: 5px;
+            background-color: darkgray;
+            border: 1px solid black;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
                 
             </tr>
         </thead>
@@ -46,7 +66,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>xxxxxxxxx</td>
             </tr>
         </tfoot>
