@@ -29,6 +29,12 @@ section#telefone{
     height: 454px;
     width: 225px;
     background: url('../imagens/frame-iphone.png') no-repeat;
-    
+}
 
+#tela{
+    position: relative;
+    top: 58px;
+    left: 16px;
+    width: 195px;
+    height: 345px;
 }
