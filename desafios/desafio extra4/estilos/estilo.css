@@ -162,7 +162,6 @@ footer a{
 }
 
 footer a:hover{
-    text-decoration: underline;
     color: rgb(190, 190, 190);
 }
 
